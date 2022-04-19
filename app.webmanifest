@@ -1,36 +1,51 @@
 {
-    "name": "Codepad Masters, the best PWA in town",
-    "short_name": "Codepad",
-    "start_url": "./?utm_source=pwa",
-    "theme_color": "#ffc252",
-    "scope": "./",
-    "display": "standalone",
-    "icons": [
-        {
-            "src": "icons/icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/icon-1024.png",
-            "sizes": "1024x1024",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/icon-maskable.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-        }
+  "__comment-1": "These properties are mandatory / good idea to set: name, start_url, orientation, scope, display, icons. Words are separated by underscore.",
+  "name": "Codepad Masters, a really cool PWA",
 
-                
-    ],
-    "description": "This app lets you add notes while you are coding",
-    "screenshots": [
-        {
-            "src": "icons/screenshot.png",
-            "sizes": "1170x2532",
-            "type": "image/png"
-        }
-    ]
+  "__comment-2": "For short_name, best practice is to stay within 12 characters.",
+  "short_name": "Codepad",
+
+  "start_url": "./",
+
+  "__comment-3": "I.e. portrait, landscape, or any",
+  "orientation": "any",
+
+  "__comment-4": "What status bar will look like. Accepts every CSS color, but to be safe, either use rgb colors, hex, or named colors",
+  "theme_color": "#ffc252",
+
+  "__comment-5": "Scope determines which files will be rendered in the PWA. For example if you refer to an url in your PWA, it falls outside the scope so will be rendered in the browser",
+  "scope": "./",
+
+  "__comment-6": "Here when you use 'browser', it will not install on your OS, but as a bookmark. So it will also open in the (non-PWA) browser. Most common property: standalone. minimal-ui: will render the minimal browser navigation, such as refresh and back button. Not supported by iOs, will use browser instead. fullscreen: only for android (you won't see a status bar), other OS will fallback to standalone. Fullscreen is good for immersive experiences: AR / VR / games.",
+  "display": "standalone",
+
+  "__comment-7": "For icons that should have a particular shape, use maskable.app",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "__comment-8": "For now these properties only work for android. This enhances the install dialog. You can add multiple screenshots.",
+  "description": "Some description for the app",
+  "screenshots": [
+    {
+      "src": "icons/screenshot.png",
+      "sizes": "1170x2532",
+      "type": "image/png"
+    }
+  ]
 }
